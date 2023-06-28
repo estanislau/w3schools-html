@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Aqui, um link não visitado ficará verde sem sublinhado. 
+Um link visitado será rosa sem sublinhado. 
+Um link ativo será amarelo e sublinhado. 
+Além disso, ao passar o mouse sobre um link (a:hover), ele ficará vermelho e sublinhado: -->
+
+<head>
+	<title>Links HTML: cores dos links</title>
+	<style>
+		a:link{
+			color: green;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited{
+			color: pink;
+			background-color: transparente;
+			text-decoration: none;
+		}
+		a:hover{
+			color: red;
+			background-color: transparente;
+			text-decoration: underline;
+		}
+		a:active{
+			color: yellow;
+			background-color: transparente;
+			text-decoration: underline;
+		}
+		</style>
+</head>
+
+<body>
+	<h2>Links Colors</h2>
+	<p>you can change the default colors of links</p>
+	<a href="html_images.asp" target="_blank">HTML Images</a>
+</body>
+</html>
