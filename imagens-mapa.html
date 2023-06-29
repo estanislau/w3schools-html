@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Imagens HTML: mapa de imagem</title>
+</head>
+<body>
+	<h1>&lt;map&gt; &lt;usemap&gt;</h1>
+	<p>Sintaxe</p>
+	<p>&lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt;</p>
+	
+	<img src="imgs/workplace.jpg" alt="Workplace" usemap="#workmap">
+	<map name="workmap">
+	  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+	  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+	  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+	</map>
+	
+	<h2>shape="rect"</h2>
+	<p>Vêm em pares, uma para o eixo x e outra para o eixo y.</p>
+	<p>Assim, as coordenadas 34,44 estão localizadas a 34 pixels da margem esquerda e a 44 pixels do topo.</p>
+	<p>As coordenadas 270,350 estão localizadas a 270 pixels da margem esquerda e a 350 pixels </p>
+	&lt;area shape="rect" coords="34, 44, 270, 350" href="computer.htm"&gt;
+	
+	<h2>shape="circle"</h2>
+	<p>Para adicionar uma área de círculo, primeiro localize as coordenadas do centro do círculo: 337, 300</p>
+	<p>Em seguida, especifique o raio do círculo 44 píxeis</p>
+	&lt;area shape="circle" coords="337, 300, 44" href="coffee.htm"&gt;
+	
+	<h2>shape="poly"</h2>
+	<p>Temos que encontrar as coordenadas x e y para todas as arestas</p>
+	<p>As coordenadas vêm em pares, uma para o eixo x e outra para o eixo y.</p>
+	&lt;area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm"&gt;
+
+</body>
+</html>

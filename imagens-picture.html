@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Imagens HTML: o elemento imagem</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1>Elemento: &lt;picture&gt;&lt;source&gt;<br>
+		Atributo: srcset, media</h1>
+		
+	<p><strong>Nota:</strong> Sempre especifique um &lt;img&gt; elemento como o último elemento filho do &lt;picture&gt; elemento. O &lt;img&gt; elemento é usado por navegadores que não oferecem suporte ao &lt;picture&gt; elemento ou se nenhuma das &lt;source&gt;tags corresponder.</p>
+	
+	<p>Redimensionar o navegador para ver diferentes versões do carregamento da imagem em diferentes tamanhos de viewport.
+	O navegador procura o primeiro elemento de origem em que a consulta de mídia corresponda à largura atual da janela de visualização do usuário,
+	e busca a imagem especificada no atributo srcset.</p>
+
+	<p>O elemento img é necessário como a última tag filho do bloco de declaração de imagem.
+	O elemento img é usado para fornecer compatibilidade com versões anteriores para navegadores que não suportam o elemento picture ou se nenhuma das tags de origem corresponder.
+	</p>
+
+	<p><strong>Observação:</strong> o elemento de imagem não é suportado no IE12 e anterior ou no Safari 9.0 e anterior.</p>
+<picture>
+  <source media="(min-width: 650px)" srcset="imgs/img_food.jpg">
+  <source media="(min-width: 465px)" srcset="imgs/img_car.jpg">
+  <img src="imgs/img_girl.jpg" style="width:auto;">
+</picture>	
+</body>
+</html>

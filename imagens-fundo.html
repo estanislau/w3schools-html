@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Imagens HTML: imagens de fundo</title>
+	<!--Use no elemento <body> para toda a página ou <p> para apenas nos parágrafos -->
+	<style>
+		body{
+			background-image: url('imgs/img_girl.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		}
+		</style>
+</head>
+<body>
+	<h1>Atributo: style<br>
+		Propriedade: background-image, background-repeat, background-size</h1>
+			
+	<p>Para adicionar uma imagem de plano de fundo em um elemento HTML, use o styleatributo HTML e a propriedade CSS background-image.</p>
+	<p>Se a imagem de fundo for menor que o elemento, a imagem se repetirá, horizontal e verticalmente, até chegar ao final do elemento</p>
+	<p>Para evitar que a imagem de fundo se repita, defina a propriedade background-repeat como no-repeat.</p>
+	<p>Se você deseja que a imagem de plano de fundo cubra todo o elemento, pode definir a background-sizepropriedade como cover.</p>
+	<p>Além disso, para garantir que todo o elemento esteja sempre coberto, defina a background-attachmentpropriedade comofixed:</p>
+	<p>Desta forma, a imagem de fundo cobrirá todo o elemento, sem esticar (a imagem manterá suas proporções originais):</p>
+	<p>Se você deseja que a imagem de plano de fundo se estique para caber em todo o elemento, defina a background-sizepropriedade como 100% 100%</p>
+</body>
+</html>

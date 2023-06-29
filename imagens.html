@@ -2,14 +2,34 @@
 <html>
 <head>
 	<title>Imagens HTML: imagens</title>
+	<!--- sugerimos o uso do atributo style. Isso evita que as folhas de estilo alterem o tamanho das imagens:-->
+	<style>
+		img{
+			width:50%;
+		}
+		</style>
+		
 </head>
 <body>
 	<h1>HTML Image</h1>
 	<h2>Sintaxe</h2>
+		<strong>Observação:</strong> <p>Sempre especifique a largura e a altura de uma imagem. Se a largura e a altura não forem especificadas, a página da Web poderá piscar enquanto a imagem é carregada.</p>
 	<p>&lt;img src="url" alt="alternatetext"&gt;</p>
+	<h2>Largura e Altura ou Estilo?</h2>
+	<p>Os atributos width, height e style são todos válidos em HTML.</p>
+
+	<p>No entanto, sugerimos o uso do atributo style. Isso evita que as folhas de estilo alterem o tamanho das imagens:</p>
+	<p>&lt;img src="url" alt="alternatetext" style="width:000px; height:000px;"&gt;</p>
 	
+	<h2>Imagem flutuante</h2>
+	<p>Use a propriedade CSS floatpara deixar a imagem flutuar à direita ou à esquerda de um texto:</p>
+	<p>&lt;img src="url" alt="alternatetext" style="float:left; width:000px; height:000px;"&gt;</p>
+		
 	<img src="imgs/pic_trulli.jpg" alt="Italian Trulli">
- 	<img src="imgs/img_girl.jpg" alt="Girl in a jacket">
-	<img src="imgs/img_chania.jpg" alt="Flowers in Chania">
+ 	<img src="imgs/img_chania.jpg" alt="Flowers in Chania">
+	<img src="imgs/img_girl.jpg" alt="Girl in a jacket" width="128" height="128">
+	<img src="imgs/img_girl.jpg" alt="Girl in a jacket" style="width:500px; height:600px;">
+	<img src="imgs/img_girl.jpg" alt="Girl in a jacket" style="float:right; width:200px; height:300px;">
+	
 </body>
 </html>
